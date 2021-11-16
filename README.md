@@ -5,7 +5,7 @@
 
 ## Features
 #### Red Hyperledger Fabric
-- 3 Organizaciones con 1 nodo peers cada una. Permiso de endorsment para las organizaciones 1 y 3.
+- 3 Organizaciones con 1 nodo peer cada una. Permiso de endorsment para las organizaciones 1 y 3.
 - 1 Nodo de ordenamiento y certificación.
 - 1 Base de Datos CouchDB por peer.
 - 1 Nodo Cli como endpoint para interactuar con la red.
