@@ -68,11 +68,13 @@ peer chaincode invoke -o orderer.acme.com:7050 \
 ```
 Función "Query" -> Args(ID) 
 
+```sh
 peer chaincode invoke -o orderer.acme.com:7050 \
     --tls --cafile $ORDERER_CA \
     --channelID $CHANNEL_NAME \
     --name $CHAINCODE_NAME \
     -c '{"Args":["Query","did:3"]}'
+```
 
 ## Monitoreo de la red
 Opcionalmente se puede instalar *Portainer* para monitorear e interactuar con la red de manera gráfica:
