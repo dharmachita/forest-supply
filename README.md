@@ -29,7 +29,7 @@ Forest-Supply utiliza las siguientes tecnologías.
 
 ## Instalación
 
-Para iniciar la instalación y desplegar la red según las características mencionadas en **Features** solo se debe ejecutar el siguiente comando dentro del directorio del repositorio:
+Para iniciar la instalación y desplegar la red según las características mencionadas en **Features** se debe ejecutar el siguiente comando dentro del directorio del repositorio:
 
 ```sh
 cd forest-supply
@@ -55,7 +55,7 @@ export CHANNEL_NAME=marketplace
 export CHAINCODE_NAME=assetcontrol
 export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/acme.com/orderers/orderer.acme.com/msp/tlscacerts/tlsca.acme.com-cert.pem
 ```
-- Ejecutar las funcioanes del chaincode:
+- Ejecutar las funciones del chaincode:
 
 Función "Set" -> Args(ID, Reponsable, Tipo Asset, Longitud, Latitud)
 
