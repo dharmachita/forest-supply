@@ -55,14 +55,24 @@ export CHANNEL_NAME=marketplace
 export CHAINCODE_NAME=assetcontrol
 export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/acme.com/orderers/orderer.acme.com/msp/tlscacerts/tlsca.acme.com-cert.pem
 ```
-- Ejecutar el comando para invocar el chaincode:
+- Ejecutar las funcioanes del chaincode:
+
+Función "Set" -> Args(ID, Reponsable, Tipo Asset, Longitud, Latitud)
+
 ```sh
 peer chaincode invoke -o orderer.acme.com:7050 \
     --tls --cafile $ORDERER_CA \
     --channelID $CHANNEL_NAME \
     --name $CHAINCODE_NAME \
-    -c '{"Args":["Set","did:3","Proveedor 1","Pino Ellioti",-54.6204737,-26.0174276]}'
+    -c '{"Args":["Set","did:3","Proveedor 1","Pino Ellioti","-54.6204737","-26.0174276"]}'
 ```
+Función "Query" -> Args(ID) 
+
+peer chaincode invoke -o orderer.acme.com:7050 \
+    --tls --cafile $ORDERER_CA \
+    --channelID $CHANNEL_NAME \
+    --name $CHAINCODE_NAME \
+    -c '{"Args":["Query","did:3"]}'
 
 ## Monitoreo de la red
 Opcionalmente se puede instalar *Portainer* para monitorear e interactuar con la red de manera gráfica:

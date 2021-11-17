@@ -14,7 +14,7 @@ export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/orde
 export CORE_PEER_PATH_ORG1=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.acme.com/
 export CORE_PEER_PATH_ORG2=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.acme.com/
 export CORE_PEER_PATH_ORG3=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.acme.com/
-export CC_PACKAGE_ID=assetcontrol_1:2b3a7530c9c7a761bc13976691586747436b57b1770b8861595376cf38e0078d
+export CC_PACKAGE_ID=assetcontrol_1:7823c868b00cdb6e8a5650b81e0b21689d40ee302ef64942f702ccaac4c88839
 
 #Empaquetar los smart contracts
 peer lifecycle chaincode package ${CHAINCODE_NAME}.tar.gz \
