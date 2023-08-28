@@ -2,3 +2,5 @@ forest.code-workspace
 
 #aws connexion data
 aws.txt
+sshconn.bat
+forestkey.pem
