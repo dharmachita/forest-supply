@@ -47,8 +47,8 @@ echo "          ####################################################### "
 echo ""
 
 PROFILECHANNEL="ThreeOrgsChannel"
-CHANNELNAME="marketplace"
-OUTPUT=$workdir"/blockchain/artifacts/channel.tx"
+CHANNELNAME="forestchannel"
+OUTPUT=$workdir"/blockchain/artifacts/forestchannel.tx"
 configtxgen -profile $PROFILECHANNEL -channelID $CHANNELNAME -outputCreateChannelTx $OUTPUT -configPath $CONFIGPATH
 
 echo ""

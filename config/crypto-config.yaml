@@ -1,11 +1,11 @@
-# Copyright Business Blockchain www.blockchainempresarial.com. All Rights Reserved.
-# Autor: Ricardo Ruano, ricardo@blockchainempresarial.com
-# Date: 20-08-2020
+# Copyright Forest Supply. All Rights Reserved.
+# Autor: Mauro Rambo, mauro.e.rambo@gmail.com
+# Date: 27-08-2023
 # SPDX-License-Identifier: Apache-2.0
 #
 OrdererOrgs:
     - Name: Orderer
-      Domain: acme.com
+      Domain: forestsupply.com
       EnableNodeOUs: true
       Specs:
         - Hostname: orderer
@@ -13,7 +13,7 @@ OrdererOrgs:
             - localhost
 PeerOrgs:
     - Name: Org1
-      Domain: org1.acme.com
+      Domain: org1.forestsupply.com
       EnableNodeOUs: true
       Template:
         Count: 1
@@ -22,7 +22,7 @@ PeerOrgs:
       Users:
         Count: 1
     - Name: Org2
-      Domain: org2.acme.com
+      Domain: org2.forestsupply.com
       EnableNodeOUs: true
       Template:
         Count: 1
@@ -31,7 +31,7 @@ PeerOrgs:
       Users:
         Count: 1
     - Name: Org3
-      Domain: org3.acme.com
+      Domain: org3.forestsupply.com
       EnableNodeOUs: true    
       Template:
         Count: 1

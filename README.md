@@ -51,9 +51,9 @@ docker exec -i -t cli /bin/bash
 ```
 - Configurar las credenciales y variables de ejecución:
 ```sh
-export CHANNEL_NAME=marketplace
+export CHANNEL_NAME=forestchannel
 export CHAINCODE_NAME=assetcontrol
-export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/acme.com/orderers/orderer.acme.com/msp/tlscacerts/tlsca.acme.com-cert.pem
+export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/forestsupply.com/orderers/orderer.forestsupply.com/msp/tlscacerts/tlsca.forestsupply.com-cert.pem
 ```
 - Ejecutar las funciones del chaincode:
 

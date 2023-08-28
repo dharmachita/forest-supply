@@ -1,6 +1,6 @@
-# Copyright Business Blockchain www.blockchainempresarial.com. All Rights Reserved.
-# Autor: Ricardo Ruano, ricardo@blockchainempresarial.com
-# Date: 20-08-2020
+# Copyright Forest Supply. All Rights Reserved.
+# Autor: Mauro Rambo, mauro.e.rambo@gmail.com
+# Date: 27-08-2023
 # SPDX-License-Identifier: Apache-2.0
 #
 ---
@@ -12,7 +12,7 @@
         - &OrdererOrg
             Name: OrdererOrg
             ID: OrdererMSP
-            MSPDir: ../blockchain/crypto-config/ordererOrganizations/acme.com/msp
+            MSPDir: ../blockchain/crypto-config/ordererOrganizations/forestsupply.com/msp
             Policies:
                 Readers:
                     Type: Signature
@@ -24,12 +24,12 @@
                     Type: Signature
                     Rule: "OR('OrdererMSP.admin')"
             OrdererEndpoints:
-                - orderer.acme.com:7050
+                - orderer.forestsupply.com:7050
     
         - &Org1
             Name: Org1MSP
             ID: Org1MSP
-            MSPDir: ../blockchain/crypto-config/peerOrganizations/org1.acme.com/msp
+            MSPDir: ../blockchain/crypto-config/peerOrganizations/org1.forestsupply.com/msp
             Policies:
                 Readers:
                     Type: Signature
@@ -44,13 +44,13 @@
                     Type: Signature
                     Rule: "OR('Org1MSP.peer')"
             AnchorPeers:
-                - Host: peer0.org1.acme.com
+                - Host: peer0.org1.forestsupply.com
                   Port: 7051
     
         - &Org2
             Name: Org2MSP
             ID: Org2MSP
-            MSPDir: ../blockchain/crypto-config/peerOrganizations/org2.acme.com/msp
+            MSPDir: ../blockchain/crypto-config/peerOrganizations/org2.forestsupply.com/msp
             Policies:
                 Readers:
                     Type: Signature
@@ -65,13 +65,13 @@
                     Type: Signature
                     Rule: "OR('Org2MSP.peer')"
             AnchorPeers:
-                - Host: peer0.org2.acme.com
+                - Host: peer0.org2.forestsupply.com
                   Port: 7051
     
         - &Org3
             Name: Org3MSP
             ID: Org3MSP
-            MSPDir: ../blockchain/crypto-config/peerOrganizations/org3.acme.com/msp
+            MSPDir: ../blockchain/crypto-config/peerOrganizations/org3.forestsupply.com/msp
             Policies:
                 Readers:
                     Type: Signature
@@ -86,7 +86,7 @@
                     Type: Signature
                     Rule: "OR('Org3MSP.peer')"
             AnchorPeers:
-                - Host: peer0.org3.acme.com
+                - Host: peer0.org3.forestsupply.com
                   Port: 7051
     ################################################################################
     #   SECTION: Capabilities
@@ -144,13 +144,13 @@
     
         EtcdRaft:
             Consenters:
-            - Host: orderer.acme.com
+            - Host: orderer.forestsupply.com
               Port: 7050
-              ClientTLSCert: ../blockchain/crypto-config/ordererOrganizations/acme.com/orderers/orderer.acme.com/tls/server.crt
-              ServerTLSCert: ../blockchain/crypto-config/ordererOrganizations/acme.com/orderers/orderer.acme.com/tls/server.crt
+              ClientTLSCert: ../blockchain/crypto-config/ordererOrganizations/forestsupply.com/orderers/orderer.forestsupply.com/tls/server.crt
+              ServerTLSCert: ../blockchain/crypto-config/ordererOrganizations/forestsupply.com/orderers/orderer.forestsupply.com/tls/server.crt
     
         Addresses:
-            - orderer.acme.com:7050
+            - orderer.forestsupply.com:7050
         BatchTimeout: 2s
         BatchSize:
             MaxMessageCount: 10
