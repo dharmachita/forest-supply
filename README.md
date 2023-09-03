@@ -60,7 +60,7 @@ export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/orde
 Función "Set" -> Args(ID, Reponsable, Tipo Asset, Longitud, Latitud)
 
 ```sh
-peer chaincode invoke -o orderer.acme.com:7050 \
+peer chaincode invoke -o orderer.forestsupply.com:7050 \
     --tls --cafile $ORDERER_CA \
     --channelID $CHANNEL_NAME \
     --name $CHAINCODE_NAME \
@@ -69,7 +69,7 @@ peer chaincode invoke -o orderer.acme.com:7050 \
 Función "Query" -> Args(ID) 
 
 ```sh
-peer chaincode invoke -o orderer.acme.com:7050 \
+peer chaincode invoke -o orderer.forestsupply.com:7050 \
     --tls --cafile $ORDERER_CA \
     --channelID $CHANNEL_NAME \
     --name $CHAINCODE_NAME \

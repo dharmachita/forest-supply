@@ -94,4 +94,4 @@ echo "                        #CONFIGURACION DE RED COMPLETA# "
 echo "          ####################################################### "
 echo ""
 
-#/opt/gopath/src/github.com/chaincode/installer.sh
+/opt/gopath/src/github.com/chaincode/installer.sh
